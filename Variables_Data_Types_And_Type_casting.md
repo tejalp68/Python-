@@ -1,4 +1,4 @@
-# Python Revision — Topic 1: Variables, Data Types & Type Casting
+# Variables, Data Types & Type Casting
 
 ## 1. Variables
 
@@ -193,12 +193,3 @@ y = 257
 x is y   # False (usually — outside cache range)
 ```
 
----
-
-## Quick Self-Check
-
-```python
-print(bool([]) or bool("0"))
-```
-
-*(Work it out using the truthy/falsy rules above before checking an answer.)*
