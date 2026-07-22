@@ -285,10 +285,3 @@ print(0 and "hello")
 print("" or [] or "last")
 ```
 
-Try working through those — happy to check your answers, or say **"next"** to move on to Operators.
-
-x = 257
-y = 257
-x is y   # False (usually — outside cache range)
-```
-
