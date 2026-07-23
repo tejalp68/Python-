@@ -25,7 +25,7 @@ s5 = r"raw\nstring"          # raw string — \n stays literal, not a newline
 ```python
 s = "Hello World"
 
-s[0]        # 'H'
+s[0]        # 'H'  -----> s.__getitem() this is dunder function which get called when we do sliciing   so s[i] = s.__getitem__(i)
 s[-1]       # 'd'  (negative index = from end)
 s[0:5]      # 'Hello'
 s[:5]       # same as above   default 0 as start index
@@ -38,6 +38,13 @@ s[2:8:2]    # start:stop:step -> 'lo o'
 ```
 
 `s[::-1]` for reversal is asked in almost every string interview problem.
+
+Because the step is negative, Python doesn't use the normal defaults (0 to end). Instead, when step < 0:
+
+start defaults to the last index (len(s) - 1)
+stop defaults to one before index 0 (conceptually, "off the left edge")
+
+So `s[::-1]` effectively means: "start at the last element, and walk backward to the first element, inclusive."
 
 ## 4. String Methods — the ones you'll actually use
 
