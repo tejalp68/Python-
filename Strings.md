@@ -28,8 +28,8 @@ s = "Hello World"
 s[0]        # 'H'
 s[-1]       # 'd'  (negative index = from end)
 s[0:5]      # 'Hello'
-s[:5]       # same as above
-s[6:]       # 'World'
+s[:5]       # same as above   default 0 as start index
+s[6:]       # 'World'      default end +1  as ending
 s[:]        # full copy
 s[::2]      # every 2nd char -> 'HloWrd'
 s[::-1]     # reversed string -> 'dlroW olleH'
