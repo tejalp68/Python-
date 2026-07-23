@@ -1,4 +1,4 @@
-**Point 2: Operators**
+#### Operators
 ## 1. Arithmetic Operators
 
 ```python
